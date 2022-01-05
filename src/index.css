@@ -1,13 +1,45 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+	padding: 24px;
+	background-color: #f7f7f7;
+}
+
+input {
+	width: 100%;
+	padding: 8px;
+	color: gray;
+}
+
+.GifsGridList {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.GifItem {
+	align-content: center;
+	background-color: white;
+	border-radius: 6px;
+	border: 1px solid gray;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	overflow: hidden;
+	text-align: center;
+	transition: 175ms ease all;
+}
+
+.GifItem:hover {
+	box-shadow: 2px 2px 4px #666;
+}
+
+.GifItem img {
+	max-height: 100px;
+}
+
+.GifItem p {
+	font-size: 14px;
+	margin: 0;
+	padding: 8px;
 }
